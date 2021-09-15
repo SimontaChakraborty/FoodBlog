@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up in Food Blog"
+        android:fontFamily="serif"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:text="Sign Up"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <EditText
+                android:id="@+id/suname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Username"
+                android:padding="16dp"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/suemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/supassword1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="#000" />
+            <EditText
+                android:id="@+id/supassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/suphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:padding="16dp"
+                android:textColor="#000" />
+            <EditText
+                android:id="@+id/suaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Address"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/linklogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Already have an account? Login" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#983A3A"
+            android:clickable="true"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnsignup"
+            android:background="#43983A"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Sign Up"
+            android:textSize="25dp"
+            android:fontFamily="serif"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"/>
+    </LinearLayout>
+</LinearLayout>

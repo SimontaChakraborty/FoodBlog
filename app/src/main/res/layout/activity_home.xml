@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="FoodBlog"
+        android:fontFamily="serif"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="#090B0E"
+        android:background="#B7F1B9"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#AAAAFF"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnCreateNew"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Create New"
+            android:textStyle="bold"
+            android:clickable="true" />
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:clickable="true" />
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="2dp">
+        <ListView
+            android:id="@+id/lvPost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#AAAAFF"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnexit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Exit"
+            android:textStyle="bold"
+            android:clickable="true"/>
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Logout"
+            android:textStyle="bold"
+            android:clickable="true"
+            />
+    </LinearLayout>
+</LinearLayout>

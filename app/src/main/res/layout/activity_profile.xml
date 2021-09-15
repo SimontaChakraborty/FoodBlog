@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/plogo"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tx1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Your Profile"
+            android:textSize="20dp"
+            android:layout_marginLeft="100dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/db1"
+            android:layout_marginLeft="100dp"
+            android:layout_below="@+id/tx1"
+            android:text="NAME:"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/db2"
+            android:layout_marginLeft="100dp"
+            android:layout_below="@+id/db1"
+            android:text="EMAIL:"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/db3"
+            android:layout_marginLeft="100dp"
+            android:layout_below="@+id/db2"
+            android:text="PHONE:"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/db4"
+            android:layout_marginLeft="100dp"
+            android:layout_below="@+id/db3"
+            android:text="ADDRESS:"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <ListView
+            android:id="@+id/profilepost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/updateprofile"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:clickable="true"/>
+    <Button
+        android:id="@+id/cancelprofile"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:clickable="true"/>
+
+
+</LinearLayout>

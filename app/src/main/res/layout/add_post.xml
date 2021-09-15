@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/icon"
+            android:layout_margin="30dp"
+            android:scaleType="centerCrop" />
+
+        <EditText
+            android:id="@+id/textTitle"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:inputType="text"
+            android:hint="Post Title"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/textDesc"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textMultiLine|textCapSentences"
+            android:hint="Post Description"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+        android:id="@+id/postBtn"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:clickable="true"/>
+        <Button
+            android:id="@+id/CancelBtn"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:clickable="true"/>
+
+    </LinearLayout>
+</ScrollView>
